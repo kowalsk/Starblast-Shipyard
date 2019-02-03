@@ -78,7 +78,7 @@ return Object.keys(a[0]).map(
 
 $( document ).ready(function() {
 
-  $.get("/universal/ssrc.txt",parseSrc);
+  $.get("/universal/src.txt",parseSrc);
 
 });
 
@@ -88,7 +88,7 @@ function parseSrc(data){
 
   var ssrc = data;
 
-  var statSectionRE = /shiptypes[\S\s]*math/;
+  var statSectionRE = /shiptypes[\S\s]*\/\/shiptypes/;
   var statSection = statSectionRE.exec(ssrc);
 
   statTable=[]

@@ -100,6 +100,9 @@ function makeTree(treeTxt){
   //hack for Bastion
   shipTierDict[6].splice(2,0,{"name":"hidden","incomingRight":true})
 
+  //hack for Side-Fighter
+  shipTierDict[2].splice(1,0,{"name":"hidden","incomingRight":true})
+
 
   //now print
   var fullString="";
